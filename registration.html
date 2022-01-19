@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>NYSL Registro</title>       
+        <link rel="stylesheet" href="assets/css/nysl.css">
+    </head>
+    <body class="container">
+        <section class="sectPortada">            
+            <h1 class="sectPortada__titPortada">Northside Youth Soccer League</h1>
+            <figure class="sectPortada__imgPortada">               
+            </figure>
+        </section>       
+        <div class="BloqTituloPag">                
+            <h2 class="BloqTituloPag__TitPagina">
+                    Registros<img src="/assets/images/nysl_logo.png"  class="BloqTituloPag__TitPagina__logo" title="logo NYSL"/>
+            </h2>  
+        </div>
+        <header class="header">                
+            <nav class="header__menu">
+                <a href="index.html" class="header__menu__link" title="Home - North Youth Soccer League" >Inicio</a>
+                <a href="about.html" class="header__menu__link" title="Acerca de NYSL">Acerca de NYSL</a>
+                <a href="contact.html" class="header__menu__link" title="Contacto"> Contacto</a>
+                <a href="rules.html" class="header__menu__link" title=" Reglas"> Reglas</a>
+                <a href="game_info.html" class="header__menu__link" title="GameInfo"> Inf Juego</a>
+                <a href="registration.html" class="header__menu__link" title="Formulario de Registro"> Registro</a>
+            </nav>
+        </header>        
+            
+                              
+        <section class="contRegistros" >
+                <form name="formulario_inscripcion" method="get" name="Grado" action="show_data.html" >
+                    <div class="contRegistros_formcont">
+                        <fieldset class="contRegistros_formcont__fieldset" form="formulario_inscripcion" name="gp_datos_personales" >
+                            <legend class="contRegistros_formcont__fieldset__Bold-tit">Datos Personales</legend>
+                            <label >Nombre del jugador: </label><input type="text" class="contRegistros_formcont__fieldset__input--bonito" placeholder="Jhon" maxlength="20" name="nombre" id="nombre" required>
+                            <label>Apellido:</label> <input type="text" class="contRegistros_formcont__fieldset__input--bonito" placeholder="Connor" name="apellido" maxlength="20" id="apellido" required>
+                           <br>
+                            <label>Direccion</label> <input type="text"class="contRegistros_formcont__fieldset__input--bonito" maxlength="50"  placeholder="Algun Lugar #123" name="direccion" id="direccion"required >
+                           
+                            <label>Ciudad:</label> <input type="text" class="contRegistros_formcont__fieldset__input--bonito" maxlength="20" placeholder="Valparaiso" name="ciudad" id="ciudad" required>
+                            <label >Codigo Postal</label> <input type="text" class="contRegistros_formcont__fieldset__input--bonito" placeholder="ej 1700000" name="codpotal" id="codpostal">
+                            <br>
+                            <label >Fecha de Nacimiento </label> <input type="date" class="contRegistros_formcont__fieldset__input--bonito" name="fnacimiento" id="fnacimiento" required>
+                            
+                            <label >Genero</label> 
+                            <input type="radio" value="Masculino" name="genero">Hombre
+                            <input type="radio" value="femenino" name="genero">Mujer
+                            <br>
+                            <label>Grado</label>
+                            <input type="radio" name="Grado" value="Preescolar"> 
+                            <label>preescolar</label>
+                            <input type="radio" name="Grado" value="1°"><sup>1°</sup>
+                            <input type="radio" name="Grado" value="2°"><sup>2°</sup>
+                            <input type="radio" name="Grado" value="3°"><sup>3°</sup> 
+                            <input type="radio" name="Grado" value="4°"><sup>4°</sup>
+                            <input type="radio" name="Grado" value="5"><sup>5°</sup>   
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset form="formulario_inscripcion" class="contRegistros_formcont__fieldset" name="escuela">
+                            <legend class="contRegistros_formcont__fieldset__Bold-tit">¿De que escuela vives mas cerca?</legend>
+                            
+                                <label class="contRegistros_formcont__fieldset__Bold-tit">Escuela más cercana:</label>
+                                <select for="escuela" name="escuela" id="escuela">
+                                    <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                                    <option value="Greenbay">Greenbay</option>
+                                    <option value="Howard A Yeager">Howard A Yeager</option>
+                                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                                    <option value="North Elementary">North Elementary</option>
+                                    <option value="South Elementary">South Elementary</option>
+                                </select>
+                                                  
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset form="formulario_inscripcion" class="contRegistros_formcont__fieldset" name="posicion">
+                            <legend class="contRegistros_formcont__fieldset__Bold-tit">¿Qué posición(es) juegas normalmente? (marque todas las que correspondan)                             
+                            </legend>
+                                <input type="checkbox" value="Delantero" name="posicion">Delantero
+                                <input type="checkbox" value="Portero" name="posicion">Portero
+                                <input type="checkbox" value="mediocampo" name="posicion">mediocampo
+                                <input type="checkbox" value="defensa" name="posicion">defensa
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset form="formulario_inscripcion" class="contRegistros_formcont__fieldset" name="uniforme">
+                            <legend class="contRegistros_formcont__fieldset__Bold-tit">Tamaño uniforme:</legend>
+                                <input type="radio" value="Niño P" name="uniforme"> Niño P
+                                <input type="radio" value="Niño M" name="uniforme"> Niño M
+                                <input type="radio" value="Niño G" name="uniforme"> Niño G
+                                <input type="radio" value="Pequeño" name="uniforme"> Pequeño
+                                <input type="radio" value="Mediano" name="uniforme"> Mediano
+                                <input type="radio" value="Grande" name="uniforme"> Grande
+                                <input type="radio" value="Extra-Grande" name="uniforme"> Extra-Grande
+                            
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset form="formulario_inscripcion" class="contRegistros_formcont__fieldset" name="uniforme">
+                            <legend class="contRegistros_formcont__fieldset__Bold-tit">Permiso para jugar</legend>                   
+                            <p>Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y
+                                yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad
+                                de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro
+                                para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y
+                                personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra
+                                cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del
+                                solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.
+                                <br>
+                                <br>
+                                
+                                Al firmar a continuación, acuerdo y autorizo lo anterior. Además, Ingresando su nombre abajo a continuación, reconozco
+                                que he leído la política de cancelación y acepto sus términos.</p>
+                            
+                            <div style="text-align:center">
+                                <label >Firma Padre/Tutor:</label><input type="text" class="contRegistros_formcont__fieldset__input--bonito" maxlength="25" placeholder="Marco Polo " name="Apoderado" id="Apoderado"> 
+                            <label  style="margin-left: 20px;">Fecha </label><input class="contRegistros_formcont__fieldset__input--bonito" type="date" >
+                            </div>
+                            
+                        </fieldset>                     
+                    
+                        <div style="text-align: center;">
+                            <input type="submit" name="enviar" value="Aceptar los termino & Enviar información" class="contRegistros_formcont_mibuttonUno" >   
+                        </div>
+                    </div>
+                </form>
+        </section>       
+        <footer>
+        </footer>
+    </body>
+</html>
