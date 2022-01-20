@@ -59,16 +59,19 @@
         width: 150px;
         height: 970px;
         float: left;
+        +
+        
+        .header__menu__link{
+            color:rgb(19, 57, 107);
+            display: block;
+            text-decoration:none ;
+            padding: 15px;
+            font-weight: 200;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:small;
+            }
     }
-    .header__menu__link{
-        color:rgb(19, 57, 107);
-        display: block;
-        text-decoration:none ;
-        padding: 15px;
-        font-weight: 200;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size:small;
-        }
+    
 
 }
 
@@ -121,29 +124,33 @@ address{
 
     .reglas__ul{
         margin-left: 60px;
+        .reglas__ul__li{
+            margin-left: 100px;
+        }
     }
 
-    .reglas__ul__li{
-        margin-left: 100px;
-    }
-    
+       
     .reglas__ol{
         margin-left: 120px;
+
+        .reglas__ol__li{
+            margin-left: 40px;
+            margin-bottom: 20px;    
+        }
+
+        .reglas__ol__li__h4{
+            font-weight: bold;
+            text-align: start;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+            display: inline;
+        }
     }
 
-    .reglas__ol__li{
-        margin-left: 40px;
-        margin-bottom: 20px;    
-    }
+   
     
     
-    .reglas__ol__li__h4{
-        font-weight: bold;
-        text-align: start;
-        text-transform: uppercase;
-        margin-bottom: 0px;
-        display: inline;
-    }
+   
 }
 
 /*---------- INF JUEGO * ----------*/

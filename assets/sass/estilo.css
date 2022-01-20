@@ -63,7 +63,7 @@
   float: left;
 }
 
-.header .header__menu__link {
+.header .header__menu + .header__menu__link {
   color: #13396b;
   display: block;
   text-decoration: none;
@@ -124,7 +124,7 @@ address {
   margin-left: 60px;
 }
 
-.reglas .reglas__ul__li {
+.reglas .reglas__ul .reglas__ul__li {
   margin-left: 100px;
 }
 
@@ -132,12 +132,12 @@ address {
   margin-left: 120px;
 }
 
-.reglas .reglas__ol__li {
+.reglas .reglas__ol .reglas__ol__li {
   margin-left: 40px;
   margin-bottom: 20px;
 }
 
-.reglas .reglas__ol__li__h4 {
+.reglas .reglas__ol .reglas__ol__li__h4 {
   font-weight: bold;
   text-align: start;
   text-transform: uppercase;
