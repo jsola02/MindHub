@@ -50,7 +50,7 @@
         position: sticky;
     }
     
-   }
+}
 
 .header{
     margin-top: 10px;
@@ -58,20 +58,18 @@
     .header__menu{
         width: 150px;
         height: 970px;
-        float: left;
-        +
-        
-        .header__menu__link{
-            color:rgb(19, 57, 107);
-            display: block;
-            text-decoration:none ;
-            padding: 15px;
-            font-weight: 200;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            font-size:small;
-            }
+        float: left;   
     }
     
+    .header__menu__link{
+        color:rgb(19, 57, 107);
+        display: block;
+        text-decoration:none ;
+        padding: 15px;
+        font-weight: 200;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:small;
+        }
 
 }
 

@@ -63,7 +63,7 @@
   float: left;
 }
 
-.header .header__menu + .header__menu__link {
+.header .header__menu__link {
   color: #13396b;
   display: block;
   text-decoration: none;
