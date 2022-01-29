@@ -2,23 +2,28 @@
     margin-right: 20px;
     margin-left: 20px;
 }
+
 .sectPortada{
     margin-top: 10px;
+    display: flex;    
+    background-image: url("/assets/images/design1_image1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover; 
 
     .sectPortada__titPortada{
-        font-family: Arial;
-        position: absolute;
+        flex-wrap: wrap;
+        font-family: Arial;        
         top: 1px;
         left: 30px;
         color:#fff;
     }
 
-    .sectPortada__imgPortada{
-        height: 250px;
-        background-image: url("/assets/images/design1_image1.jpg");
+     .sectPortada__imgPortada{       
+        height: 250px;      
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size:cover;
+       background-attachment: fixed;
+        background-size:cover; 
+
         /* posicionar img con barra de nombre*/
         margin-left: 1px;
         margin-top: 3px;
@@ -52,30 +57,55 @@
     
 }
 
-.header{
-    margin-top: 10px;
-
-    .header__menu{
-        width: 150px;
-        height: 970px;
-        float: left;   
-    }
+.header-flex{    
+    margin-top: 1px; 
+    display: flex; 
+  
+    .header__menu-flex{
+        display: flex; 
+        width: 150px;       
+        flex-direction: column;  
+        padding: 10px ;     
+    }   
     
-    .header__menu__link{
-        color:rgb(19, 57, 107);
-        display: block;
+    .header__menu__link-flex{        
+        color:#fff;
+        background: #469C58;    
         text-decoration:none ;
         padding: 15px;
         font-weight: 200;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size:small;
+        border-bottom: solid 1px #68b979;
+        border-bottom-width: thin;
+        text-align: center; 
+
         }
 
+    .header__menu__link-flex--start{
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .header__menu__link-flex--end{
+        border-radius: 0px 0px 10px 15px;
+    }
+    
+    .header__menu__link-flex:hover{
+        background: #6DC680;
+    }
+
+}
+
+/* Contenedor general para aplicar FLEX */
+.contGral-flex{
+    display: flex;
+    padding: 0px 10px 10px 10px;
+    
 }
 
 /* Seccion Noticias */
 .contNoticias{
-    padding-left: 5px;    
+    padding-left: 25px; 
 }
 
  /* Seccion About*/
@@ -103,9 +133,7 @@ address{
     
     .reglas__h3{
         text-align: center;
-        text-transform: uppercase;
-
-       
+        text-transform: uppercase;       
     }
     .reglas__h3--izquierda{
         text-align: start; 
@@ -148,30 +176,45 @@ address{
 }
 
 /*---------- INF JUEGO * ----------*/
-.contInfJuego{
-    padding: 5px;
-    .contInfJuego__txthor{
+.cont-inf-juego{
+display: flex;
+padding-left: 25px;
+}   
+
+    .cont-inf-juego__gral{
+        flex-wrap: wrap;
+    }
+
+    .cont-inf-juego__gral--cont-tabla{
+        flex-wrap: none;
+    }
+    .cont-inf-juego__gral__txthor{    
         text-align: start;
         text-decoration: underline;
         font-style: oblique;
     }
 
-    .contInfJuego__hr{
-        padding: 10px;
-        margin: 25px;
-        border: none;
-    }
-    .contInfJuego__titmenu{
-        text-transform: uppercase;
-     }
     
-     /*---------- tablas * ----------*/
-    .contInfJuego__table,th,td{
+ */
+
+    .cont-inf-juego__gral__table,th,td{
+        flex-wrap: wrap;
         border: 1px solid rgb(5, 5, 5);
         border-collapse:collapse;
     
     }
 
+
+
+
+
+.contInfJuego{
+   
+    .contInfJuego__titmenu{
+        text-transform: uppercase;
+     }
+    
+    
 }
 
  /*---------- Formulario * ----------*/ 
@@ -220,5 +263,13 @@ address{
 }
 
 .footer{
-    margin-top: 1px;
+    margin-top: 1px;  
+    
+
+    .footer__nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
 }
